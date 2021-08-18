@@ -1,7 +1,18 @@
 .App {
   font-family: 'Gill Sans';
+  margin-bottom: 5rem;
 }
 
+p {
+  font-weight: 300;
+}
+
+.section-header {
+  text-align: center;
+  font-family: 'Gill Sans';
+  font-size: 2rem;
+  font-weight: 600;
+}
 /********* About **********/
 
 .banner-image img {
@@ -9,12 +20,6 @@
   height: 25rem;
   object-fit: cover;
   object-position: center;
-}
-
-.section-header {
-  text-align: center;
-  font-family: 'Gill Sans';
-  font-size: 2rem;
 }
 
 #about-header p {
@@ -138,17 +143,21 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
+  padding-top: 1rem;
+  padding-bottom: 3rem;
 }
 
-#skills-pair {
+#skills-bars {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   justify-content: space-around;
   width: 100%;
 }
 
 #single-skill {
-  margin: 5%;
+  margin: 0 5% 0 5%;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -156,6 +165,7 @@
 
 .skills-name {
   margin-right: 1rem;
+  width: 4.5rem;
 }
 
 .skills-bar {
@@ -165,9 +175,22 @@
   border-radius: 5px;
 }
 
-.progress {
+.progress-coding,
+.progress-design {
   border-top-left-radius: 5px;
   border-bottom-left-radius: 5px;
-  background-color: #92bda3;
   height: 1rem;
+}
+
+.progress-coding {
+  background-color: #92bda3;
+}
+
+.progress-design {
+  background-color: #7a5c79;
+}
+
+.skills-type {
+  text-align: center;
+  font-size: 1.25rem;
 }
