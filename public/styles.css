@@ -1,3 +1,9 @@
+.App {
+  font-family: 'Gill Sans';
+}
+
+/********* About **********/
+
 .banner-image img {
   width: 100%;
   height: 25rem;
@@ -5,14 +11,14 @@
   object-position: center;
 }
 
-#about-header {
-  color: #e4772d;
+.section-header {
   text-align: center;
   font-family: 'Gill Sans';
   font-size: 2rem;
 }
 
 #about-header p {
+  color: #e4772d;
   margin-bottom: 0;
 }
 
@@ -124,4 +130,44 @@
 
 .flip-back {
   transform: rotateY(180deg);
+}
+
+/********* Skills **********/
+#skills-section {
+  background-color: #f2bc94;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#skills-pair {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100%;
+}
+
+#single-skill {
+  margin: 5%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.skills-name {
+  margin-right: 1rem;
+}
+
+.skills-bar {
+  width: 20rem;
+  height: 1rem;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+.progress {
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  background-color: #92bda3;
+  height: 1rem;
 }

@@ -1,4 +1,5 @@
 import About from './About';
+import Skills from './Skills';
 import rock_landscape from './images/rock_landscape.jpg';
 
 function App() {
@@ -8,6 +9,7 @@ function App() {
         <img src={rock_landscape} alt="rocky landscape" />
       </div>
       <About />
+      <Skills />
     </div>
   );
 }
