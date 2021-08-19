@@ -13,13 +13,22 @@ p {
   font-size: 2rem;
   font-weight: 600;
 }
-/********* About **********/
 
 .banner-image img {
   width: 100%;
   height: 25rem;
+  margin-bottom: 2rem;
   object-fit: cover;
   object-position: center;
+}
+
+/********* About **********/
+
+#about,
+#skills-section,
+#experience {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
 #about-header p {
@@ -81,12 +90,16 @@ p {
   flex-direction: row;
   align-items: center;
   justify-content: center;
+  width: 100%;
 }
 
 .about-tile {
   margin: 0.5rem;
-  width: 10rem;
-  height: 10rem;
+  /* width: 10rem;
+  height: 10rem; */
+  width: 30%;
+  /* height: 10rem; */
+  aspect-ratio: 1/1;
   text-align: center;
   perspective: 1000px;
 }
@@ -142,7 +155,7 @@ p {
 
 /********* Skills **********/
 #skills-section {
-  background-color: #f7e1d1;
+  background-color: #f7eadf;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -164,6 +177,7 @@ p {
   display: flex;
   flex-direction: row;
   align-items: center;
+  height: 1.75rem;
 }
 
 .skills-name {
@@ -196,4 +210,19 @@ p {
 .skills-type {
   text-align: center;
   font-size: 1.25rem;
+}
+
+hr {
+  margin-top: 1.5rem;
+  width: 80%;
+  border-color: black;
+  border-top: none;
+}
+
+/********* Experience **********/
+
+.experience-subtitle {
+  text-align: center;
+  font-size: 1.5rem;
+  margin-top: 2rem;
 }

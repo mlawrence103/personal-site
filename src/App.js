@@ -1,5 +1,6 @@
 import About from './About';
 import Skills from './Skills';
+import Experience from './Experience';
 import rock_landscape from './images/rock_landscape.jpg';
 
 function App() {
@@ -10,6 +11,7 @@ function App() {
       </div>
       <About />
       <Skills />
+      <Experience />
     </div>
   );
 }
