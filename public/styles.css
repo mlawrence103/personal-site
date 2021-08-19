@@ -23,7 +23,7 @@ p {
 }
 
 #about-header p {
-  color: #e4772d;
+  /* color: #e4772d; */
   margin-bottom: 0;
 }
 
@@ -92,8 +92,11 @@ p {
 }
 
 .about-icon {
-  margin-top: 0.5rem;
+  /* margin-top: 0.5rem; */
+  height: 80%;
   font-size: 6rem;
+  margin-bottom: 0;
+  padding-bottom: 0;
 }
 
 .about-tile p {
@@ -139,7 +142,7 @@ p {
 
 /********* Skills **********/
 #skills-section {
-  background-color: #f2bc94;
+  background-color: #f7e1d1;
   display: flex;
   flex-direction: column;
   justify-content: center;

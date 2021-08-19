@@ -4,11 +4,21 @@ import caving from './images/caving.jpg';
 import eating_burrito from './images/eating_burrito.jpg';
 import watermelon from './images/watermelon.jpeg';
 import me from './images/about_me.JPG';
-import { FaDog } from 'react-icons/fa';
-import { GiForestCamp, GiSushis, GiMagnifyingGlass } from 'react-icons/gi';
+import Lottie from 'react-lottie';
+import campfire from './lotties/campfire.json';
+import black_dog from './lotties/black_dog.json';
+import noodles from './lotties/noodles.json';
+import pinch from './lotties/pinch.json';
 
 class About extends React.Component {
   render() {
+    const defaultOptions = {
+      loop: true,
+      autoplay: true,
+      rendererSettings: {
+        preserveAspectRatio: 'xMidYMid slice',
+      },
+    };
     return (
       <div id="about">
         <div id="about-header">
@@ -41,7 +51,10 @@ class About extends React.Component {
                 <div className="flip-inner">
                   <div className="flip-front">
                     <div className="about-icon">
-                      <FaDog />
+                      <Lottie
+                        options={{ defaultOptions, animationData: black_dog }}
+                        width={'70%'}
+                      />
                     </div>
                     <p>My Dog: Cora</p>
                   </div>
@@ -54,7 +67,10 @@ class About extends React.Component {
                 <div className="flip-inner">
                   <div className="flip-front">
                     <div className="about-icon">
-                      <GiForestCamp />
+                      <Lottie
+                        options={{ defaultOptions, animationData: campfire }}
+                        width={'80%'}
+                      />
                     </div>
                     <p>Adventuring</p>
                   </div>
@@ -69,7 +85,11 @@ class About extends React.Component {
                 <div className="flip-inner">
                   <div className="flip-front">
                     <div className="about-icon">
-                      <GiSushis />
+                      <Lottie
+                        options={{ defaultOptions, animationData: noodles }}
+                        width={'100%'}
+                        height={'110%'}
+                      />
                     </div>
                     <p>Good Food</p>
                   </div>
@@ -82,7 +102,14 @@ class About extends React.Component {
                 <div className="flip-inner">
                   <div className="flip-front">
                     <div className="about-icon">
-                      <GiMagnifyingGlass />
+                      <Lottie
+                        options={{
+                          defaultOptions,
+                          animationData: pinch,
+                        }}
+                        width={'100%'}
+                        height={'110%'}
+                      />
                     </div>
                     <p>Really Small Things</p>
                   </div>
