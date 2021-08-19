@@ -221,8 +221,65 @@ hr {
 
 /********* Experience **********/
 
+#experience {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 .experience-subtitle {
   text-align: center;
   font-size: 1.5rem;
   margin-top: 2rem;
+}
+
+#resume-button {
+  width: 15%;
+  padding: 0.5rem;
+  background-color: #bfdecc;
+  border-radius: 5px;
+  border: 1px solid black;
+}
+
+#resume-button:hover {
+  background-color: #92bda3;
+}
+
+#resume-button a {
+  text-decoration: none;
+  color: black;
+}
+
+.experience-item {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  font-weight: 300;
+}
+
+.company-duration,
+.position-description {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem;
+}
+
+.company {
+  font-size: 1.25rem;
+  font-weight: 400;
+}
+
+.position-description {
+  width: 60%;
+}
+
+.position {
+  font-size: 1.1rem;
+  font-weight: 400;
+}
+
+.description-bullet {
+  padding-top: 0.5rem;
 }
