@@ -1,6 +1,6 @@
 .App {
   font-family: 'Gill Sans';
-  margin-bottom: 5rem;
+  margin-bottom: 3rem;
 }
 
 p {
@@ -14,19 +14,40 @@ p {
   font-weight: 600;
 }
 
+.banner-image {
+  position: relative;
+}
+
 .banner-image img {
   width: 100%;
   height: 25rem;
   margin-bottom: 2rem;
   object-fit: cover;
   object-position: center;
+  transition: 1s;
+}
+
+.banner-image img:hover {
+  opacity: 0.5;
+  transition: 1s;
+}
+
+#hidden-banner-text {
+  position: absolute;
+  font-size: 1.5rem;
+  top: 12rem;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
 }
 
 /********* About **********/
 
 #about,
 #skills-section,
-#experience {
+#experience,
+#education,
+#projects {
   margin-top: 1rem;
   margin-bottom: 1rem;
 }
@@ -160,8 +181,9 @@ p {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-top: 1rem;
+  padding-top: 2rem;
   padding-bottom: 3rem;
+  margin-top: 3rem;
 }
 
 #skills-bars {
@@ -228,10 +250,13 @@ hr {
   align-items: center;
 }
 
-.experience-subtitle {
+.experience-subtitle,
+#education-title,
+#project-title {
   text-align: center;
   font-size: 1.5rem;
   margin-top: 2rem;
+  font-weight: 300;
 }
 
 #resume-button {
@@ -240,6 +265,7 @@ hr {
   background-color: #bfdecc;
   border-radius: 5px;
   border: 1px solid black;
+  margin-top: 2rem;
 }
 
 #resume-button:hover {
@@ -255,24 +281,34 @@ hr {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
-  justify-content: center;
+  justify-content: space-between;
   font-weight: 300;
+  width: 70%;
 }
 
 .company-duration,
-.position-description {
+.position-description,
+.organization-duration {
   display: flex;
   flex-direction: column;
-  margin: 1rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
-.company {
+.company-duration,
+.organization-duration {
+  width: 30%;
+  text-align: left;
+}
+
+.company,
+.organization {
   font-size: 1.25rem;
   font-weight: 400;
 }
 
 .position-description {
-  width: 60%;
+  width: 70%;
 }
 
 .position {
@@ -282,4 +318,148 @@ hr {
 
 .description-bullet {
   padding-top: 0.5rem;
+}
+
+/********* Education **********/
+
+#education {
+  background-color: #f7eadf;
+  margin-top: 3rem;
+  padding: 2rem;
+  font-weight: 300;
+}
+
+#education-list {
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.education-item {
+  margin-bottom: 1.5rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.education-info {
+  width: 75%;
+}
+
+.school-logo {
+  width: 25%;
+}
+
+.school-logo img {
+  width: 30%;
+  margin-left: 50%;
+}
+
+.education-dates {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 0.25rem;
+}
+
+.school {
+  font-weight: 400;
+}
+
+#description-gpa {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+/********* Contact **********/
+
+#contact {
+  margin-top: 5rem;
+  width: 90%;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+#contact-headers {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.contact-title {
+  font-weight: 400;
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+
+#contact-info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+#contact-logos img {
+  width: 2rem;
+  margin-right: 1rem;
+}
+
+#email a {
+  color: #92bda3;
+  text-decoration: none;
+}
+
+#email a:hover {
+  color: black;
+}
+
+/***** Projects *****/
+#projects {
+  text-align: center;
+}
+
+#project-list {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+#project-title {
+  margin-bottom: 0.5rem;
+}
+
+#project-directions {
+  margin-top: 0;
+  color: rgb(213, 213, 213);
+  font-size: 0.75rem;
+}
+
+.project {
+  width: 30%;
+  text-align: center;
+  position: relative;
+}
+
+.project-image {
+  width: 100%;
+  aspect-ratio: 1/1;
+  object-fit: contain;
+  background-color: white;
+}
+
+.project img:hover {
+  opacity: 0.25;
+}
+
+.project-description {
+  width: 80%;
+  font-weight: 400;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
 }
