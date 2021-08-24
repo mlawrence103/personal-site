@@ -1,6 +1,7 @@
 import React from 'react';
 import tasteNotWaste from './images/TNWlogo.png';
 import mitw from './images/mitw.png';
+import amr from './images/amr.jpg';
 
 class Projects extends React.Component {
   render() {
@@ -25,12 +26,25 @@ class Projects extends React.Component {
             <img
               className="project-image"
               src={mitw}
-              alt="taste not waste logo"
+              alt="meet in the middle thumbnail"
             />
             <p className="project-description">
               Web application for finding a meeting spot, and nearby activities,
               that balances travel time with varied transit methods from two
               addresses
+            </p>
+          </div>
+          <div className="project">
+            <img
+              className="project-image"
+              src={amr}
+              alt="autonomous mobile robot screenshot"
+            />
+            <p className="project-description">
+              Educational project exploring autonomous robotics principles in
+              sensing, localization, mapping and planning with the goal of
+              navigating a virtual robot through a map with both known and
+              unknown walls to find waypoints
             </p>
           </div>
         </div>
