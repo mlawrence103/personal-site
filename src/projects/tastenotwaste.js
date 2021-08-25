@@ -1,6 +1,7 @@
 import React from 'react';
 import tnw_logo from '../images/tnwIconClean.png';
 import tnw_gif from '../images/fridgeRecordingClear.gif';
+import Contact from '../Contact';
 import { useHistory } from 'react-router-dom';
 
 const TasteNotWaste = () => {
@@ -89,6 +90,7 @@ const TasteNotWaste = () => {
       <div className="go-back-bottom">
         <button onClick={() => history.push('/')}>Go Back</button>
       </div>
+      <Contact />
     </div>
   );
 };
