@@ -1,5 +1,5 @@
 import Home from './Home';
-import TasteNotWaste from './projects/TasteNotWaste';
+import { TasteNotWaste } from './projects/TasteNotWaste';
 import MeetInTheMiddle from './projects/MeetInTheMiddle';
 import AMR from './projects/AMR';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
