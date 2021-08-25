@@ -28,12 +28,11 @@ class About extends React.Component {
           <div id="about-text">
             <p className="about-subtitle">Hi, I'm Mabel</p>
             <p>
-              I am a software engineer leveraging the power of technology to
-              make information more interesting and accessible for modern
-              audiences. I have a background in mechanical engineering and
-              design, and I enjoy problem solving everything from how to
-              optimize code for an application to how to contruct an elliptical
-              dome for a play.
+              I am a software engineer working to create interesting and
+              accessible solutions for modern audiences. My background is in
+              mechanical engineering and design, and I enjoy problem solving
+              everything from how to optimize code for an application to how to
+              contruct an elliptical dome for a play.
             </p>
             <img id="about-me-img" src={me} alt="Mabel with pumpkin" />
           </div>
