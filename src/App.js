@@ -1,25 +1,27 @@
-import About from './About';
-import Skills from './Skills';
-import Experience from './Experience';
-import Education from './Education';
-import Projects from './Projects';
-import Contact from './Contact';
-import rock_landscape from './images/rock_landscape.jpg';
+import Home from './Home';
+import TasteNotWaste from './projects/tastenotwaste';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
 function App() {
   return (
-    <div className="App">
-      <div className="banner-image">
-        <img src={rock_landscape} alt="rocky landscape" />
-      </div>
-      <p id="hidden-banner-text">Just a nice photo I took...</p>
-      <About />
-      <Skills />
-      <Projects />
-      <Education />
-      <Experience />
-      <Contact />
-    </div>
+    <Router>
+      <Switch>
+        {/* <div className="App">
+        <div className="banner-image">
+          <img src={rock_landscape} alt="rocky landscape" />
+        </div>
+        <p id="hidden-banner-text">Just a nice photo I took...</p>
+        <About />
+        <Skills />
+        <Projects />
+        <Education />
+        <Experience />
+        <Contact /> */}
+        <Route exact path="/" component={Home} />
+        <Route exact path="/taste-not-waste" component={TasteNotWaste} />
+      </Switch>
+      {/* </div> */}
+    </Router>
   );
 }
 

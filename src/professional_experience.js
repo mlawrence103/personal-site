@@ -10,7 +10,7 @@ const jobs = [
   },
   {
     company: 'Stand and Build',
-    duration: 'August 2019 - Present',
+    duration: 'August 2019 - February 2021',
     position: 'Technical Designer',
     description: [
       '- Produced drawing sets and renderings for retail fixtures, custom furniture, and pop ups using Rhino 3D',
