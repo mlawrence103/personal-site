@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Kalam&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz&display=swap');
 
 .App {
   font-family: 'Gill Sans';
@@ -479,6 +480,7 @@ hr {
   background-color: #f7eadf;
   padding: 1rem;
   margin-bottom: 1rem;
+  font-family: 'Gill Sans';
 }
 
 .go-back-top a {
@@ -511,7 +513,8 @@ hr {
 }
 
 /*** Taste Not Waste ***/
-#taste-not-waste {
+#taste-not-waste,
+#meet-in-the-middle {
   width: 80%;
   margin: 0% 10% 5% 10%;
   font-family: 'Gill Sans';
@@ -539,7 +542,8 @@ hr {
   flex-direction: column;
 }
 
-#tnw-subheader a {
+#tnw-subheader a,
+#mitw-subheader a {
   color: black;
   text-decoration: none;
   font-style: italic;
@@ -547,7 +551,8 @@ hr {
   margin: 0.25rem;
 }
 
-#tnw-subheader a:hover {
+#tnw-subheader a:hover,
+#mitw-subheader a:hover {
   color: #92bda3;
 }
 
@@ -581,18 +586,76 @@ hr {
 }
 
 #tnw-techstack ul,
-#tnw-responsibilities ul {
+#tnw-responsibilities ul,
+#mitw-responsibilities ul,
+#mitw-techstack ul {
   list-style-type: '-  ';
   font-weight: 300;
   padding-left: 1.5rem;
 }
 
 #tnw-techstack li,
-#tnw-responsibilities li {
+#tnw-responsibilities li,
+#mitw-responsibilities li,
+#mitw-techstack li {
   margin-bottom: 0.25rem;
 }
 
 #tnw-video {
   text-align: center;
   margin-top: 2rem;
+}
+
+/**** Meet in the Middle ****/
+#meet-in-the-middle {
+  min-height: 80vh;
+  position: relative;
+}
+
+#mitw-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#mitw-name h1 {
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+#meet-in-the-middle .project-page-description a {
+  color: black;
+  font-style: italic;
+  font-weight: 350;
+  text-decoration: none;
+}
+
+#meet-in-the-middle .project-page-description a:hover {
+  color: #92bda3;
+}
+
+#mitw-techstack-responsibilities {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 80%;
+  margin-left: 10%;
+}
+
+#mitw-techstack-responsibilities p {
+  font-weight: 400;
+}
+
+#mitw-responsibilities {
+  width: 60%;
+  margin-right: 3rem;
+}
+
+#mitw-video {
+  margin-bottom: 3rem;
+  text-align: center;
+  margin-top: 3rem;
 }

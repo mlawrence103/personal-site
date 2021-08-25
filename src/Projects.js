@@ -26,7 +26,10 @@ const Projects = () => {
             using the relevant ingredients
           </p>
         </div>
-        <div className="project">
+        <div
+          className="project"
+          onClick={() => history.push('/meet-in-the-middle')}
+        >
           <img
             className="project-image"
             src={mitw}
