@@ -681,3 +681,273 @@ hr {
   font-size: 0.75rem;
   color: rgb(213, 213, 213);
 }
+
+/***** MOBILE STYLING *****/
+
+@media only screen and (max-width: 800px) {
+  .banner-image img {
+    width: 100%;
+    height: 15rem;
+    margin-bottom: 2rem;
+    object-fit: cover;
+    object-position: center;
+    transition: 1s;
+  }
+
+  #hidden-banner-text {
+    display: none;
+  }
+
+  /*** ABOUT ***/
+  #about {
+    width: 100%;
+  }
+  #about-content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .about-subtitle {
+    margin-bottom: 0.5rem;
+    font-size: 1.25rem;
+  }
+
+  #about-text {
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding: 0;
+  }
+
+  #about-me-img {
+    width: 100%;
+    margin: 0;
+  }
+
+  #flip-directions {
+    display: none;
+  }
+
+  #about-tiles {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    width: 50%;
+    align-items: center;
+  }
+
+  .about-tiles-row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .about-tile {
+    margin: 0.5rem;
+    width: 125px;
+    height: 125px;
+    text-align: center;
+    perspective: 1000px;
+  }
+
+  .about-icon {
+    height: 80%;
+    font-size: 6rem;
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+
+  .about-tile p {
+    margin-top: 0.25rem;
+    width: 100%;
+    text-align: center;
+  }
+
+  .about-tile img {
+    width: 100%;
+  }
+
+  /*** SKILLS ***/
+
+  #skills-bars {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #single-skill {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+  }
+
+  .skills-name {
+    margin-right: 0.75rem;
+  }
+
+  .skills-bar {
+    width: 250px;
+    height: 1rem;
+    border: 1px solid black;
+    border-radius: 5px;
+  }
+
+  .progress-coding,
+  .progress-design {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    height: 1rem;
+  }
+
+  .progress-coding {
+    background-color: #92bda3;
+  }
+
+  .progress-design {
+    background-color: #7a5c79;
+  }
+
+  .skills-type {
+    text-align: center;
+    font-size: 1.25rem;
+  }
+
+  hr {
+    margin-top: 1.5rem;
+    width: 80%;
+    border-color: black;
+    border-top: none;
+  }
+
+  /*** PROJECTS ***/
+  #projects {
+    width: 90%;
+    margin-left: 5%;
+  }
+  #project-list {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin-left: 5%;
+    justify-content: center;
+  }
+  .project-image {
+    width: 250px;
+  }
+  .project-description {
+    display: none;
+  }
+
+  #project-title {
+    margin-bottom: 0.5rem;
+  }
+
+  .project {
+    width: 100%;
+    text-align: center;
+    position: relative;
+    margin-bottom: 1.5rem;
+  }
+
+  /*** EDUCATION ***/
+
+  #education {
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+    margin-top: 1rem;
+  }
+
+  #education-list {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .education-item {
+    margin-bottom: 1.5rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .education-info {
+    width: 90%;
+    margin-left: 5%;
+  }
+
+  .school-logo {
+    display: none;
+  }
+
+  .education-dates {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #description-gpa {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  #gpa {
+    margin-bottom: 0.25rem;
+  }
+
+  /********* Experience **********/
+  #experience {
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+
+  .experience-subtitle {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  #resume-button {
+    width: 30%;
+  }
+
+  .experience-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-weight: 300;
+    width: 100%;
+    margin-bottom: 1.25rem;
+  }
+
+  .company-duration,
+  .position-description,
+  .organization-duration {
+    display: flex;
+    flex-direction: column;
+    margin-top: 0.5rem;
+    margin-bottom: 0.25rem;
+  }
+
+  .company-duration,
+  .organization-duration {
+    width: 90%;
+    text-align: left;
+  }
+
+  .position-description {
+    width: 90%;
+  }
+
+  .position {
+    font-size: 1rem;
+  }
+
+  .description-bullet {
+    padding-top: 0.5rem;
+    font-size: 0.85rem;
+  }
+}

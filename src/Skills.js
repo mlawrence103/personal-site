@@ -22,7 +22,6 @@ class Skills extends React.Component {
     ];
     return (
       <div id="skills-section">
-        {/* <p className="section-header">Skills</p> */}
         <p className="skills-type">Technical Skills</p>
         <div id="skills-bars">
           {codingSkills.map((skill) => {
