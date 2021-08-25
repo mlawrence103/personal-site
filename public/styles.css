@@ -118,17 +118,13 @@ p {
 
 .about-tile {
   margin: 0.5rem;
-  /* width: 10rem;
-  height: 10rem; */
   width: 30%;
-  /* height: 10rem; */
   aspect-ratio: 1/1;
   text-align: center;
   perspective: 1000px;
 }
 
 .about-icon {
-  /* margin-top: 0.5rem; */
   height: 80%;
   font-size: 6rem;
   margin-bottom: 0;
@@ -512,6 +508,26 @@ hr {
   background-color: #ae8dad;
 }
 
+#tnw-techstack ul,
+#tnw-responsibilities ul,
+#mitw-responsibilities ul,
+#mitw-techstack ul,
+#amr-techstack ul,
+#amr-responsibilities ul {
+  list-style-type: '-  ';
+  font-weight: 300;
+  padding-left: 1.5rem;
+}
+
+#tnw-techstack li,
+#tnw-responsibilities li,
+#mitw-responsibilities li,
+#mitw-techstack li,
+#amr-responsibilities li,
+#amr-techstack li {
+  margin-bottom: 0.25rem;
+}
+
 /*** Taste Not Waste ***/
 #taste-not-waste,
 #meet-in-the-middle {
@@ -585,29 +601,14 @@ hr {
   font-size: 1rem;
 }
 
-#tnw-techstack ul,
-#tnw-responsibilities ul,
-#mitw-responsibilities ul,
-#mitw-techstack ul {
-  list-style-type: '-  ';
-  font-weight: 300;
-  padding-left: 1.5rem;
-}
-
-#tnw-techstack li,
-#tnw-responsibilities li,
-#mitw-responsibilities li,
-#mitw-techstack li {
-  margin-bottom: 0.25rem;
-}
-
 #tnw-video {
   text-align: center;
   margin-top: 2rem;
 }
 
 /**** Meet in the Middle ****/
-#meet-in-the-middle {
+#meet-in-the-middle,
+#autonomous-mobile-robots {
   min-height: 80vh;
   position: relative;
 }
@@ -637,7 +638,8 @@ hr {
   color: #92bda3;
 }
 
-#mitw-techstack-responsibilities {
+#mitw-techstack-responsibilities,
+#amr-techstack-responsibilities {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -645,11 +647,13 @@ hr {
   margin-left: 10%;
 }
 
-#mitw-techstack-responsibilities p {
+#mitw-techstack-responsibilities p,
+#amr-techstack-responsibilities p {
   font-weight: 400;
 }
 
-#mitw-responsibilities {
+#mitw-responsibilities,
+#amr-responsibilities {
   width: 60%;
   margin-right: 3rem;
 }
@@ -658,4 +662,22 @@ hr {
   margin-bottom: 3rem;
   text-align: center;
   margin-top: 3rem;
+}
+
+/**** Autonomous Mobile Robots ****/
+#amr-name h1 {
+  font-family: 'Courier New';
+  text-align: center;
+  margin-top: 2rem;
+}
+
+#amr-report {
+  text-align: center;
+  margin-bottom: 3rem;
+  margin-top: 2rem;
+}
+
+#amr-report-caption {
+  font-size: 0.75rem;
+  color: rgb(213, 213, 213);
 }

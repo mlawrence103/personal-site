@@ -41,7 +41,10 @@ const Projects = () => {
             addresses
           </p>
         </div>
-        <div className="project">
+        <div
+          className="project"
+          onClick={() => history.push('/autonomous-mobile-robots')}
+        >
           <img
             className="project-image"
             src={amr}
