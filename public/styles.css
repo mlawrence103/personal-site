@@ -460,14 +460,16 @@ hr {
   opacity: 0.1;
 }
 
-.project-description {
-  width: 80%;
-  font-weight: 400;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: -1;
+@media only screen and (min-width: 801px) {
+  .project-description {
+    width: 80%;
+    font-weight: 400;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+  }
 }
 
 /***** Single Projects ******/
@@ -736,7 +738,7 @@ hr {
     display: flex;
     flex-direction: column;
     padding: 1rem;
-    width: 50%;
+    width: 80%;
     align-items: center;
   }
 
@@ -837,22 +839,26 @@ hr {
     margin-left: 5%;
     justify-content: center;
   }
+  .project {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    position: static;
+    margin-bottom: 1.5rem;
+  }
   .project-image {
-    width: 250px;
+    width: 90%;
+    margin-left: 5%;
+    text-align: center;
   }
   .project-description {
-    display: none;
+    position: static;
+    font-weight: 300;
+    font-size: 1rem;
   }
 
   #project-title {
     margin-bottom: 0.5rem;
-  }
-
-  .project {
-    width: 100%;
-    text-align: center;
-    position: relative;
-    margin-bottom: 1.5rem;
   }
 
   /*** EDUCATION ***/
@@ -949,5 +955,42 @@ hr {
   .description-bullet {
     padding-top: 0.5rem;
     font-size: 0.85rem;
+  }
+
+  /*** CONTACT ***/
+  #contact {
+    margin-top: 3rem;
+    padding-top: 0.5rem;
+    padding-bottom: 1rem;
+  }
+
+  #contact-main {
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+
+  #contact-headers {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .contact-title {
+    font-weight: 400;
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+  }
+
+  #contact-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  #contact-logos img {
+    width: 1.5rem;
+    margin-right: 1rem;
   }
 }
