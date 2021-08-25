@@ -2,7 +2,6 @@
 
 .App {
   font-family: 'Gill Sans';
-  margin-bottom: 3rem;
 }
 
 p {
@@ -377,9 +376,14 @@ hr {
 }
 
 /********* Contact **********/
-
 #contact {
   margin-top: 5rem;
+  background-color: #f7eadf;
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+}
+
+#contact-main {
   width: 90%;
   margin-left: 5%;
   margin-right: 5%;
@@ -469,19 +473,46 @@ hr {
 }
 
 /***** Single Projects ******/
-.go-back a {
+.go-back-top {
+  width: 100%;
+  background-color: #f7eadf;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+.go-back-top a {
   color: #92bda3;
   text-decoration: none;
 }
 
-.go-back a:hover {
+.go-back-top a:hover {
   color: black;
+}
+
+.go-back-bottom {
+  width: 10%;
+  margin-left: 45%;
+  margin-bottom: 5rem;
+}
+.go-back-bottom button {
+  font-family: 'Gill Sans';
+  font-size: 1rem;
+  background-color: #7a5c79;
+  padding: 0.5rem 0.75rem 0.5rem 0.75rem;
+  border-radius: 7px;
+  box-shadow: none;
+  border: 1px solid #7a5c79;
+  color: white;
+}
+
+.go-back-bottom button:hover {
+  background-color: #ae8dad;
 }
 
 /*** Taste Not Waste ***/
 #taste-not-waste {
   width: 80%;
-  margin: 1% 10% 5% 10%;
+  margin: 0% 10% 5% 10%;
   font-family: 'Gill Sans';
 }
 
@@ -558,4 +589,9 @@ hr {
 #tnw-techstack li,
 #tnw-responsibilities li {
   margin-bottom: 0.25rem;
+}
+
+#tnw-video {
+  text-align: center;
+  margin-top: 2rem;
 }
