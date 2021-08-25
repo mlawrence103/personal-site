@@ -4,7 +4,7 @@ import tnw_gif from '../images/fridgeRecordingClear.gif';
 import Contact from '../Contact';
 import { useHistory } from 'react-router-dom';
 
-export const TasteNotWaste = () => {
+const TasteNotWaste = () => {
   const history = useHistory();
   return (
     <div className="single-project-page">
@@ -94,3 +94,5 @@ export const TasteNotWaste = () => {
     </div>
   );
 };
+
+export default TasteNotWaste;
