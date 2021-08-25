@@ -1,7 +1,7 @@
 import React from 'react';
 import tnw_logo from '../images/tnwIconClean.png';
 import tnw_gif from '../images/fridgeRecordingClear.gif';
-import Contact from '../Contact';
+import Contact from './Contact';
 import { useHistory } from 'react-router-dom';
 
 const TasteNotWaste = () => {
