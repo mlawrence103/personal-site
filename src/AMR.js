@@ -57,6 +57,11 @@ const AMR = () => {
             title="autonomous mobile robots report"
             loading="lazy"
           ></iframe>
+          <div id="amr-report-button">
+            <a href={AMR_Report} target="_blank" rel="noopener noreferrer">
+              Open Project Report
+            </a>
+          </div>
           <p id="amr-report-caption">
             Report on final project performance and contribution
           </p>

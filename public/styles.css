@@ -861,6 +861,14 @@ hr {
     margin-bottom: 0.5rem;
   }
 
+  .go-back-bottom {
+    width: 30%;
+    margin-left: 35%;
+    text-align: center;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+  }
+
   /*** EDUCATION ***/
 
   #education {
@@ -1061,11 +1069,43 @@ hr {
     width: 95%;
   }
 
-  .go-back-bottom {
-    width: 30%;
-    margin-left: 35%;
+  /*** MITW & AMR ***/
+  #autonomous-mobile-robots .project-page-description p {
+    margin-left: 5%;
+  }
+
+  #meet-in-the-middle {
+    width: 90%;
+    margin-left: 5%;
+  }
+
+  #mitw-techstack-responsibilities,
+  #amr-techstack-responsibilities {
+    flex-direction: column;
+    width: 90%;
+    margin-left: 5%;
+  }
+
+  #mitw-responsibilities,
+  #mitw-techstack,
+  #amr-techstack,
+  #amr-responsibilities {
+    width: 100%;
+  }
+
+  #autonomous-mobile-robots iframe,
+  #amr-report-caption {
+    display: none;
+  }
+
+  #amr-report-button a {
     text-align: center;
-    margin-top: 3rem;
-    margin-bottom: 2rem;
+    font-family: 'Gill Sans';
+    font-size: 1rem;
+    background-color: #92bda3;
+    padding: 0.5rem 0.75rem 0.5rem 0.75rem;
+    border-radius: 7px;
+    text-decoration: none;
+    color: white;
   }
 }
