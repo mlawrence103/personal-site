@@ -993,4 +993,79 @@ hr {
     width: 1.5rem;
     margin-right: 1rem;
   }
+
+  /*** Taste Not Waste ***/
+  #taste-not-waste {
+    width: 90%;
+    margin: 0 5% 0 5%;
+  }
+
+  #tnw-name-logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #tnw-logo {
+    width: 50%;
+  }
+
+  #tnw-name h1 {
+    font-family: 'Kalam';
+    font-size: 2rem;
+    margin-bottom: 0;
+    text-align: center;
+  }
+
+  #tnw-subheader {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  #tnw-subheader a,
+  #mitw-subheader a {
+    font-weight: 350;
+    margin-bottom: 0px;
+  }
+
+  .project-page-description {
+    width: 90%;
+    margin-left: 5%;
+  }
+
+  #tnw-gif-techstack-responsibilities {
+    width: 90%;
+    margin-left: 5%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  #tnw-gif img {
+    width: 300px;
+  }
+
+  #tnw-techstack,
+  #tnw-responsibilities {
+    width: 90%;
+    margin-left: 5%;
+  }
+
+  #tnw-video {
+    text-align: center;
+    margin-top: 2rem;
+  }
+
+  iframe {
+    width: 95%;
+  }
+
+  .go-back-bottom {
+    width: 30%;
+    margin-left: 35%;
+    text-align: center;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+  }
 }
