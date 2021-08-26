@@ -684,7 +684,7 @@ hr {
   color: rgb(213, 213, 213);
 }
 
-@media only screen and(min-width: 801px) {
+@media only screen and (min-width: 801px) {
   #amr-report-button {
     display: none;
   }
