@@ -29,7 +29,7 @@ class About extends React.Component {
               accessible solutions for modern audiences. My background is in
               mechanical engineering and design, and I enjoy problem solving
               everything from how to optimize code for an application to how to
-              contruct an elliptical dome for a play.
+              construct an elliptical dome for a play.
             </p>
             <img id="about-me-img" src={me} alt="Mabel with pumpkin" />
           </div>
