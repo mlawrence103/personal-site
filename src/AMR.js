@@ -10,7 +10,7 @@ const AMR = () => {
       <div className="go-back-top">
         <a href="/">Home</a>
       </div>
-      <div id="autonomous-mobile-robots">
+      <div id="autonomous-mobile-robots" className="single-project-placement">
         <div className="project-name">
           <div id="amr-header">
             <div id="amr-name">
@@ -29,8 +29,11 @@ const AMR = () => {
           </p>
         </div>
         <div id="amr-techstack-responsibilities">
-          <div id="amr-responsibilities">
-            <p>Personal Contributions</p>
+          <div
+            id="amr-responsibilities"
+            className="techstack-responsibilities-list row-responsibilities"
+          >
+            <p className="font-weight-400">Personal Contributions</p>
             <ul>
               <li>
                 Created rapidly exploring random tree path plan with MATLAB to
@@ -42,8 +45,8 @@ const AMR = () => {
               </li>
             </ul>
           </div>
-          <div id="amr-techstack">
-            <p>Technologies Used:</p>
+          <div id="amr-techstack" className="techstack-responsibilities-list">
+            <p className="font-weight-400">Technologies Used:</p>
             <ul>
               <li>MATLAB</li>
             </ul>

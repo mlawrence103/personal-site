@@ -20,7 +20,7 @@ class About extends React.Component {
       },
     };
     return (
-      <div id="about">
+      <div id="about" className="margin-top-bottom-1rem">
         <div id="about-content">
           <div id="about-text">
             <p className="about-subtitle">Hi, I'm Mabel</p>
@@ -55,7 +55,7 @@ class About extends React.Component {
                     <p>My Dog: Cora</p>
                   </div>
                   <div className="flip-back">
-                    <img src={cora} alt="Cora" />
+                    <img src={cora} alt="Cora" className="width-100" />
                   </div>
                 </div>
               </div>
@@ -71,7 +71,7 @@ class About extends React.Component {
                     <p>Adventuring</p>
                   </div>
                   <div className="flip-back">
-                    <img src={caving} alt="caving" />
+                    <img src={caving} alt="caving" className="width-100" />
                   </div>
                 </div>
               </div>
@@ -90,7 +90,11 @@ class About extends React.Component {
                     <p>Good Food</p>
                   </div>
                   <div className="flip-back">
-                    <img src={eating_burrito} alt="Cora" />
+                    <img
+                      src={eating_burrito}
+                      alt="Mabel eating a burrito"
+                      className="width-100"
+                    />
                   </div>
                 </div>
               </div>
@@ -110,7 +114,11 @@ class About extends React.Component {
                     <p>Really Small Things</p>
                   </div>
                   <div className="flip-back">
-                    <img src={watermelon} alt="Cora" />
+                    <img
+                      src={watermelon}
+                      alt="Tiny watermelon"
+                      className="width-100"
+                    />
                   </div>
                 </div>
               </div>

@@ -11,7 +11,7 @@ const TasteNotWaste = () => {
       <div className="go-back-top">
         <a href="/">Home</a>
       </div>
-      <div id="taste-not-waste">
+      <div id="taste-not-waste" className="single-project-placement">
         <div className="project-name">
           <div id="tnw-name-logo">
             <img id="tnw-logo" src={tnw_logo} alt="taste not waste logo" />
@@ -49,8 +49,11 @@ const TasteNotWaste = () => {
             <img src={tnw_gif} alt="gif of taste not waste app in use" />
           </div>
           <div id="tnw-techstack-responsibilities">
-            <div id="tnw-responsibilities">
-              <p>Personal Contributions</p>
+            <div
+              id="tnw-responsibilities"
+              className="techstack-responsibilities-list"
+            >
+              <p className="font-weight-400">Personal Contributions</p>
               <ul>
                 <li>
                   Implemented Google Vision OCR to parse food names from line
@@ -62,8 +65,8 @@ const TasteNotWaste = () => {
                 </li>
               </ul>
             </div>
-            <div id="tnw-techstack">
-              <p>Technologies Used:</p>
+            <div id="tnw-techstack" className="techstack-responsibilities-list">
+              <p className="font-weight-400">Technologies Used:</p>
               <ul>
                 <li>React Native</li>
                 <li>Redux</li>

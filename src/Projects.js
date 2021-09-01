@@ -7,7 +7,7 @@ import amr from './images/amr.jpg';
 const Projects = () => {
   const history = useHistory();
   return (
-    <div id="projects">
+    <div id="projects" className="margin-top-bottom-1rem">
       <div id="project-title">Projects</div>
       <label id="project-directions">Click for more information</label>
       <div id="project-list">

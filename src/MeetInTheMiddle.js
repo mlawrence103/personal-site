@@ -9,7 +9,7 @@ const MeetInTheMiddle = () => {
       <div className="go-back-top">
         <a href="/">Home</a>
       </div>
-      <div id="meet-in-the-middle">
+      <div id="meet-in-the-middle" className="single-project-placement">
         <div className="project-name">
           <div id="mitw-header">
             <div id="mitw-name">
@@ -43,8 +43,8 @@ const MeetInTheMiddle = () => {
           </p>
         </div>
         <div id="mitw-techstack-responsibilities">
-          <div id="mitw-responsibilities">
-            <p>Personal Contributions</p>
+          <div className="techstack-responsibilities-list row-responsibilities width-100">
+            <p className="font-weight-400">Personal Contributions</p>
             <ul>
               <li>
                 Integrated Mapbox and Yelp APIs to render dynamic map and highly
@@ -56,8 +56,8 @@ const MeetInTheMiddle = () => {
               </li>
             </ul>
           </div>
-          <div id="mitw-techstack">
-            <p>Technologies Used:</p>
+          <div id="mitw-techstack" className="techstack-responsibilities-list">
+            <p className="font-weight-400">Technologies Used:</p>
             <ul>
               <li>React</li>
               <li>Redux</li>

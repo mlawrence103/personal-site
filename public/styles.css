@@ -21,7 +21,6 @@ p {
 }
 
 .banner-image img {
-  width: 100%;
   height: 25rem;
   margin-bottom: 2rem;
   object-fit: cover;
@@ -43,19 +42,22 @@ p {
   z-index: -1;
 }
 
-/********* About **********/
-
-#about,
-#skills-section,
-#experience,
-#education,
-#projects {
+.margin-top-bottom-1rem {
   margin-top: 1rem;
   margin-bottom: 1rem;
 }
 
+.font-weight-400 {
+  font-weight: 400;
+}
+
+.width-100 {
+  width: 100%;
+}
+
+/********* About **********/
+
 #about-header p {
-  /* color: #e4772d; */
   margin-bottom: 0;
 }
 
@@ -133,12 +135,22 @@ p {
 
 .about-tile p {
   margin-top: 0.25rem;
-  width: 100%;
+  max-width: 100%;
   text-align: center;
+  font-size: 0.95rem;
 }
 
-.about-tile img {
-  width: 100%;
+@media only screen and (min-width: 801px) and (max-width: 1050px) {
+  .about-icon {
+    transform: translateY(-15%);
+    height: 90%;
+  }
+  .about-tile p {
+    height: 10%;
+    margin: 0;
+    transform: translateY(-75%);
+    font-size: 0.72rem;
+  }
 }
 
 /* This container is needed to position the front and back side */
@@ -301,19 +313,12 @@ hr {
   text-align: left;
 }
 
-.company,
-.organization {
-  font-size: 1.25rem;
-  font-weight: 400;
-}
-
 .position-description {
   width: 70%;
 }
 
 .position {
   font-size: 1.1rem;
-  font-weight: 400;
 }
 
 .description-bullet {
@@ -362,10 +367,6 @@ hr {
   margin-bottom: 0.25rem;
 }
 
-.school {
-  font-weight: 400;
-}
-
 #description-gpa {
   display: flex;
   flex-direction: row;
@@ -394,7 +395,6 @@ hr {
 }
 
 .contact-title {
-  font-weight: 400;
   font-size: 1.25rem;
   margin-bottom: 0.5rem;
 }
@@ -460,6 +460,7 @@ hr {
   opacity: 0.1;
 }
 
+/* Below rule is only for larger screens */
 @media only screen and (min-width: 801px) {
   .project-description {
     width: 80%;
@@ -510,33 +511,23 @@ hr {
   background-color: #ae8dad;
 }
 
-#tnw-techstack ul,
-#tnw-responsibilities ul,
-#mitw-responsibilities ul,
-#mitw-techstack ul,
-#amr-techstack ul,
-#amr-responsibilities ul {
+.techstack-responsibilities-list ul {
   list-style-type: '-  ';
   font-weight: 300;
   padding-left: 1.5rem;
 }
 
-#tnw-techstack li,
-#tnw-responsibilities li,
-#mitw-responsibilities li,
-#mitw-techstack li,
-#amr-responsibilities li,
-#amr-techstack li {
+.techstack-responsibilities-list li {
   margin-bottom: 0.25rem;
 }
 
-/*** Taste Not Waste ***/
-#taste-not-waste,
-#meet-in-the-middle {
+.single-project-placement {
   width: 80%;
   margin: 0% 10% 5% 10%;
   font-family: 'Gill Sans';
 }
+
+/*** Taste Not Waste ***/
 
 #tnw-name-logo {
   display: flex;
@@ -599,7 +590,6 @@ hr {
 
 #tnw-techstack p,
 #tnw-responsibilities p {
-  font-weight: 400;
   font-size: 1rem;
 }
 
@@ -649,13 +639,7 @@ hr {
   margin-left: 10%;
 }
 
-#mitw-techstack-responsibilities p,
-#amr-techstack-responsibilities p {
-  font-weight: 400;
-}
-
-#mitw-responsibilities,
-#amr-responsibilities {
+.row-responsibilities {
   width: 60%;
   margin-right: 3rem;
 }
@@ -991,7 +975,6 @@ hr {
   }
 
   .contact-title {
-    font-weight: 400;
     font-size: 1rem;
     margin-bottom: 0.5rem;
   }
@@ -1076,6 +1059,10 @@ hr {
   }
 
   /*** MITW & AMR ***/
+  .row-responsibilities {
+    width: 100%;
+  }
+
   #autonomous-mobile-robots .project-page-description p {
     margin-left: 5%;
   }
@@ -1092,7 +1079,6 @@ hr {
     margin-left: 5%;
   }
 
-  #mitw-responsibilities,
   #mitw-techstack,
   #amr-techstack,
   #amr-responsibilities {

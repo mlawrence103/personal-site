@@ -8,8 +8,10 @@ class Contact extends React.Component {
       <div id="contact">
         <div id="contact-main">
           <div id="contact-headers">
-            <p className="contact-title">The Professional Links</p>
-            <p className="contact-title">Email</p>
+            <p className="contact-title font-weight-400">
+              The Professional Links
+            </p>
+            <p className="contact-title font-weight-400">Email</p>
           </div>
           <div id="contact-info">
             <div id="contact-logos">

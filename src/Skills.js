@@ -21,7 +21,7 @@ class Skills extends React.Component {
       { name: 'Fusion 360', proficiency: 60 },
     ];
     return (
-      <div id="skills-section">
+      <div id="skills-section" className="margin-top-bottom-1rem">
         <p className="skills-type">Technical Skills</p>
         <div id="skills-bars">
           {codingSkills.map((skill) => {

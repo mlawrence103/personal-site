@@ -5,7 +5,7 @@ import cornell from './images/cornell.png';
 class Education extends React.Component {
   render() {
     return (
-      <div id="education">
+      <div id="education" className="margin-top-bottom-1rem">
         <p id="education-title">Education</p>
         <div id="education-list">
           <div className="education-item">
@@ -14,7 +14,7 @@ class Education extends React.Component {
             </div>
             <div className="education-info">
               <div className="education-dates">
-                <div className="school">
+                <div className="school font-weight-400">
                   Fullstack Academy, Grace Hopper Program
                 </div>
                 <div className="school-dates">April 2021 - July 2021</div>
@@ -33,7 +33,7 @@ class Education extends React.Component {
             </div>
             <div className="education-info">
               <div className="education-dates">
-                <div className="school">Cornell University</div>
+                <div className="school font-weight-400">Cornell University</div>
                 <div className="school-dates">August 2015 - May 2019</div>
               </div>
               <div id="description-gpa">

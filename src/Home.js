@@ -11,7 +11,7 @@ const Home = () => {
   return (
     <div className="App">
       <div className="banner-image">
-        <img src={rock_landscape} alt="rocky landscape" />
+        <img src={rock_landscape} alt="rocky landscape" className="width-100" />
       </div>
       <p id="hidden-banner-text">Just a nice photo I took...</p>
       <About />

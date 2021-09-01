@@ -6,17 +6,17 @@ import leadership from './leadership';
 class Experience extends React.Component {
   render() {
     return (
-      <div id="experience">
+      <div id="experience" className="margin-top-bottom-1rem">
         <p className="experience-subtitle">Professional Experience</p>
         {jobs.map((job) => {
           return (
             <div className="experience-item">
               <div className="company-duration">
-                <div className="company">{job.company}</div>
+                <div className="company font-weight-400">{job.company}</div>
                 <div className="duration">{job.duration}</div>
               </div>
               <div className="position-description">
-                <div className="position">{job.position}</div>
+                <div className="position font-weight-400">{job.position}</div>
                 <div className="job-description">
                   {job.description.map((bullet) => {
                     return <div className="description-bullet">{bullet}</div>;
@@ -31,11 +31,13 @@ class Experience extends React.Component {
           return (
             <div className="experience-item">
               <div className="organization-duration">
-                <div className="organization">{role.organization}</div>
+                <div className="organization font-weight-400">
+                  {role.organization}
+                </div>
                 <div className="duration">{role.duration}</div>
               </div>
               <div className="position-description">
-                <div className="position">{role.position}</div>
+                <div className="position font-weight-400">{role.position}</div>
                 <div className="job-description">
                   {role.description.map((bullet) => {
                     return <div className="description-bullet">{bullet}</div>;
